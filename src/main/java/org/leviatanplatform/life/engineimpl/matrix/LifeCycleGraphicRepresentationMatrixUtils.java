@@ -1,24 +1,9 @@
 package org.leviatanplatform.life.engineimpl.matrix;
 
-import javax.swing.*;
 import java.awt.*;
 import java.util.List;
 
 public class LifeCycleGraphicRepresentationMatrixUtils {
-
-    public static JPanel createCanvas(List<GenomeMatrix> listOfGenome) {
-
-        JPanel canvas = new JPanel() {
-            @Override
-            public void paintComponent(Graphics g) {
-                super.paintComponent(g);
-                int width = getWidth();
-                LifeCycleGraphicRepresentationMatrixUtils.paintCurrentListOfGenome(g, width, listOfGenome);
-            }
-        };
-
-        return canvas;
-    }
 
     public static void paintCurrentListOfGenome(Graphics g, int width, List<GenomeMatrix> listOfGenome) {
 
